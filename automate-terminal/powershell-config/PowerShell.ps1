@@ -16,8 +16,13 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
 #Terminal Icons Module
 Install-Module -Name Terminal-Icons -Repository PSGallery -Force
 
-# PSReadLine Module
+# PowerShellGet Module
 Install-Module -Name PowerShellGet -Force
+
+# Restart PowerShell as administrator
+Start-Process powershell.exe -Verb RunAs -ArgumentList "-NoExit","-Command ""& { $script = '$($MyInvocation.MyCommand.Path)'; Start-Process powershell.exe -ArgumentList '-NoExit','-Command',' & ''$script'' ' -Verb RunAs }"""
+
+# PSReadLine Module
 Install-Module PSReadLine -AllowPrerelease -Force
 
 # Copying Files
@@ -25,6 +30,3 @@ Install-Module PSReadLine -AllowPrerelease -Force
 Copy-Item -Path "$pwd\*" -Destination "C:\Users\$Env:UserName\Documents\WindowsPowerShell" -Recurse
 Remove-Item "C:\Users\$Env:UserName\Documents\WindowsPowerShell\Instruction.txt"
 Remove-Item "C:\Users\$Env:UserName\Documents\WindowsPowerShell\PowerShell.ps1"
-
-
-
