@@ -22,10 +22,7 @@ Install-Module -Name PowerShellGet -Force
 #Following Scripts
 $scriptPath = ".\PowerShell2.ps1"
 
-Start-Process powershell.exe -ArgumentList "-NoExit", "-Command", "& '$scriptPath'" -Verb RunAs
-
-
-
+Start-Process powershell.exe -ArgumentList "-NoExit", "-Command", "$scriptPath" -Verb RunAs
 
 # Restart PowerShell as administrator
 Start-Process powershell.exe -Verb RunAs -ArgumentList "-NoExit","-Command ""& { $script = '$($MyInvocation.MyCommand.Path)'; Start-Process powershell.exe -ArgumentList '-NoExit','-Command',' & ''$script'' ' -Verb RunAs }"""
