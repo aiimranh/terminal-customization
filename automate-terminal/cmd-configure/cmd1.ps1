@@ -11,6 +11,7 @@ Start-Process -FilePath "cmd.exe" -ArgumentList "/c .\cmd2.bat"
 
 # Copying File
 Write-Host "Copying Files"
-Copy-Item -Path "$pwd\powerlevel10k_rainbow.omp.json" -Destination "C:\Program Files (x86)\clink\powerlevel10k_rainbow.omp.json"
+New-Item "C:\Program Files (x86)\clink\themes" -ItemType Directory
+Copy-Item -Path "$pwd\powerlevel10k_rainbow.omp.json" -Destination "C:\Program Files (x86)\clink\themes\powerlevel10k_rainbow.omp.json"
 Copy-Item -Path "$pwd\oh-my-posh.lua" -Destination "C:\Program Files (x86)\clink\"
 Write-Host "Process Done"

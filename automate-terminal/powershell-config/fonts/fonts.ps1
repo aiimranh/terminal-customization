@@ -1,4 +1,5 @@
 #Set folder paths and grab font files from the repo
+Write-Host "Installing Nerd Font"
 $source = $PSScriptRoot
 $fontFolder = 'C:\Windows\Fonts'
 $fonts = Get-ChildItem -Path $source -Include '*.ttf', '*.otf' -Recurse
@@ -32,3 +33,4 @@ foreach ($font in $fonts) {
         }
     }
 }
+Write-Host "Process Done"
