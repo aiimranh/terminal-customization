@@ -1,0 +1,1 @@
+-- load(io.popen('oh-my-posh init cmd --config C:/Users/AIIH/Documents/WindowsPowerShell/themes/powerlevel10k_rainbow.omp.json'):read("*a"))()
