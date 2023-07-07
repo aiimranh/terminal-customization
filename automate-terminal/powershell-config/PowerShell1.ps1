@@ -23,4 +23,3 @@ Install-Module -Name PowerShellGet -Force
 $scriptPath = ".\PowerShell2.ps1"
 
 Start-Process powershell.exe -ArgumentList "-NoExit", "-Command", "$scriptPath" -Verb RunAs
-Exit
