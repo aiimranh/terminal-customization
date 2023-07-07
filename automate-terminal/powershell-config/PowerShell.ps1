@@ -17,7 +17,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
 Install-Module -Name Terminal-Icons -Repository PSGallery -Force
 
 # PSReadLine Module
-Install-Module -Name PowerShellNuGet -Force
+Install-Module -Name PowerShellGet -Force
 Install-Module PSReadLine -AllowPrerelease -Force
 
 # Copying Files
