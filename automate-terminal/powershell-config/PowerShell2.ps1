@@ -3,10 +3,8 @@ Install-Module PSReadLine -AllowPrerelease -Force
 
 # Copying Files
 # New-Item "C:\Users\$Env:UserName\Documents\WindowsPowerShell\" -ItemType Directory
-Copy-Item -Path "$pwd\*" -Destination "C:\Users\$Env:UserName\Documents\WindowsPowerShell" -Recurse
-Remove-Item "C:\Users\$Env:UserName\Documents\WindowsPowerShell\Instruction.txt"
-Remove-Item "C:\Users\$Env:UserName\Documents\WindowsPowerShell\PowerShell1.ps1"
-Remove-Item "C:\Users\$Env:UserName\Documents\WindowsPowerShell\PowerShell2.ps1"
+Copy-Item -Path "$pwd\themes\*" -Destination "C:\Users\$Env:UserName\Documents\WindowsPowerShell\themes" -Recurse
+Copy-Item -Path "$pwd\Microsoft.PowerShell_profile.ps1" -Destination "C:\Users\$Env:UserName\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1"
 
 # font installing
 $scriptPath = ".\fonts\fonts.ps1"
