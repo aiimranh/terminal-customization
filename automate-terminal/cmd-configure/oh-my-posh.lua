@@ -1,1 +1,1 @@
-load(io.popen('oh-my-posh init cmd --config 'C:/Program Files (x86)/clink/powerlevel10k_rainbow.omp.json''):read("*a"))()
+load(io.popen('oh-my-posh init cmd --config "C:\Program Files (x86)\clink\powerlevel10k_rainbow.omp.json"'):read("*a"))()
