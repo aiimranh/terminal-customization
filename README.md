@@ -5,5 +5,6 @@
 - Windows Subsystem Linux
 - Command Prompt
 - Gitbash
+- Automate Terminal with Oh-My-Posh
 
  The repo also includes most of the necessary <b>dot</b> files.
